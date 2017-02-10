@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="app_name">POI App</string>
+  <string name="hello_world">Hello world!</string>
+  <string name="action_settings">Settings</string>
+
+  <string name="start">Enter START</string>
+  <string name="end">Enter ICE Name</string>
+  <string name="date">Enter DATE</string>
+  <string name="time">Enter TIME</string>
+  <string name="button_send">Set POI Notifications</string>
+
+</resources>

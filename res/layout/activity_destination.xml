@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/activity_destination"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:paddingBottom="@dimen/activity_vertical_margin"
+  android:paddingLeft="@dimen/activity_horizontal_margin"
+  android:paddingRight="@dimen/activity_horizontal_margin"
+  android:paddingTop="@dimen/activity_vertical_margin"
+  tools:context="dbchallenge.poi_app.open_DestinationPoi"
+  android:background="?android:attr/actionModeBackground">
+
+  <TextView
+    android:text="HOTELS AND RESTAURANTS NEAR YOUR DESTINATION               "
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/textView23"
+    android:textSize="25sp"
+    android:textStyle="normal|bold"
+    android:textColor="@android:color/background_light" />
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_below="@+id/textView23">
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="800dp">
+
+      <ImageView
+        android:src="@drawable/ic_launcher"
+        android:id="@+id/firstHotel"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="150dp" />
+
+      <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher"
+        android:id="@+id/secondHotel"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/firstHotel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+      <TextView
+        android:text="Katharina-Paulus-Str.5, 10557 Berlin"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/adress2"
+        android:layout_alignBottom="@+id/secondHotel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_light" />
+
+      <TextView
+        android:text="Alt-Moabit 99,             10559 Berlin"
+        android:layout_width="200dp"
+        android:id="@+id/adress1"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/firstHotel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_light" />
+
+      <TextView
+        android:text="Ameron Hotel Abion"
+        android:layout_height="wrap_content"
+        android:id="@+id/hotel1"
+        android:layout_above="@+id/adress1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:layout_width="200dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_light" />
+
+      <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/hotel2"
+        android:layout_alignTop="@+id/secondHotel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:text="InterCity Hotel"
+        android:textColor="@android:color/background_light" />
+
+      <TextView
+        android:text="Recommended Restaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rest_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+        android:textSize="20sp"
+        android:textStyle="normal|italic"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/background_light" />
+
+      <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/db_final_icon"
+        android:id="@+id/imageView4"
+        android:layout_marginTop="72dp"
+        android:layout_below="@+id/adress2"
+        android:layout_alignRight="@+id/adress2"
+        android:layout_alignEnd="@+id/adress2" />
+
+      <TextView
+        android:text="url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:autoLink="web"
+        android:id="@+id/textView24"
+        android:textColor="@android:color/background_light" />
+
+      <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_marginTop="26dp"
+        android:id="@+id/restaurant"
+        android:layout_below="@+id/rest_title"
+        android:layout_centerHorizontal="true" />
+
+      <TextView
+        android:text="Berlin Hauptbahnhof, Europapl. 1, 10557 Berlin"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/rest_adress"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/rest_name"
+        android:layout_alignLeft="@+id/rest_title"
+        android:layout_alignStart="@+id/rest_title" />
+
+      <TextView
+        android:text="HANS IM GLÜCK - Burgergrill"
+        android:layout_height="wrap_content"
+        android:id="@+id/rest_name"
+        android:layout_marginTop="32dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_light"
+        android:layout_width="250dp"
+        android:layout_below="@+id/restaurant"
+        android:layout_alignLeft="@+id/rest_adress"
+        android:layout_alignStart="@+id/rest_adress" />
+
+    </RelativeLayout>
+  </ScrollView>
+</RelativeLayout>

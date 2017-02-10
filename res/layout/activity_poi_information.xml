@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_open_information"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="dbchallenge.poi_app.open_Information"
+  android:background="?android:attr/actionModeBackground">
+
+  <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/POI_TIP"
+      android:layout_alignLeft="@+id/POI_NAME"
+        android:layout_alignStart="@+id/POI_NAME"
+      android:layout_alignTop="@+id/textView4"
+      android:autoLink="web"
+      android:textColor="@android:color/background_light"
+      android:textSize="18sp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/POI_ADRESS"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/POI_TIP"
+        android:layout_alignStart="@+id/POI_TIP"
+      android:textColor="@android:color/background_light"
+      android:textSize="18sp" />
+
+  <ImageView
+    android:layout_width="400dp"
+    android:layout_height="400dp"
+    android:src="@drawable/ic_launcher"
+    android:id="@+id/imageView5"
+    android:layout_above="@+id/textView1"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true" />
+
+  <TextView
+      android:text="Name:"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/textView1"
+    android:textSize="18sp"
+    android:textColor="@android:color/background_light"
+    android:layout_alignBaseline="@+id/POI_NAME"
+    android:layout_alignBottom="@+id/POI_NAME"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+  <TextView
+    android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/textView2"
+    android:textColor="@android:color/background_dark"
+    android:textSize="12sp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+  <TextView
+      android:text="Adresse:"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/textView3"
+    android:textColor="@android:color/background_light"
+    android:textSize="18sp"
+    android:layout_above="@+id/textView2"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginBottom="70dp" />
+
+  <TextView
+        android:text="Infos:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_marginTop="21dp"
+    android:textColor="@android:color/background_light"
+    android:textSize="18sp"
+    android:layout_below="@+id/textView1"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+  <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:id="@+id/POI_NAME"
+      android:textColor="@android:color/background_light"
+      android:textSize="18sp"
+    android:layout_marginBottom="152dp"
+    android:layout_above="@+id/POI_ADRESS"
+    android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
